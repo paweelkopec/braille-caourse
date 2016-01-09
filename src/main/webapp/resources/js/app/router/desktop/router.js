@@ -11,6 +11,7 @@ define("router", [
     'app/collections/courses',
     'app/views/desktop/learning',
     'app/views/desktop/about',
+    'app/views/desktop/study',
     'text!../templates/desktop/main.html'
 ],function ($,
             _,
@@ -21,6 +22,7 @@ define("router", [
             Courses, //collection
             LearningView,
             AboutView,
+            StudyView,
             MainTemplate) {
 
     $(document).ready(new function() {
@@ -43,6 +45,7 @@ define("router", [
         	"":"home",
         	"home":"home",
         	"learning/:categoryId":"learning", 
+        	"study/:categoryId":"study", 
             "about":"about",	
         }
         ,home : function () {
@@ -60,6 +63,21 @@ define("router", [
                     }
                 });
 
+        }
+        ,study: function (categoryId) {
+        	var courses = new Courses(null, {categoryId: categoryId});
+        	var studyView = new StudyView({model:courses, el:$("#content")});
+        	studyView.setCategoryId(categoryId);
+        	courses.on("reset",function () {
+            	
+                utilities.viewManager.showView(studyView);
+                }).fetch({
+                    reset : true,
+                    error : function() {
+                        utilities.displayAlert("Failed to retrieve curses from the server.");
+                    }
+           });
+        	
         }
         ,learning: function (categoryId) {
         	

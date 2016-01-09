@@ -22,7 +22,7 @@ define([
         },
         startClicked :function (e) {
         	e.preventDefault();
-        	window.location.hash = 'learning/'+$("#categoryId").val();
+        	window.location.hash = 'study/'+$("#categoryId").val();
         	 
         }
     });
