@@ -14,7 +14,7 @@ define([
         render:function () {
         /*	
          * console.log(JSON.stringify(this.model.next()));
-         */
+         */ 
             utilities.applyTemplate($(this.el),StudyTemplate,{model:this.model});
             return this;
         },
