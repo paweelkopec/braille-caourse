@@ -21,9 +21,9 @@ insert into CourseCategory (id, name) values ( 1, 'Alfabet');
 insert into CourseCategory (id, name) values ( 2, 'Numery');
 -- Course 1
 insert into Course (id, name, img, category_id) values (1, 'a', 'a.jpg', 1);
--- Course 2
+-- Course 1
 insert into Course (id, name, img, category_id) values (2, 'b', 'b.jpg', 1);
--- Course 3
+-- Course 1
 insert into Course (id, name, img, category_id) values (3, 'c', 'c.jpg', 1);
 insert into Course (id, name, img, category_id) values (4, 'd', 'd.jpg', 1);
 insert into Course (id, name, img, category_id) values (5, 'e', 'e.jpg', 1);
@@ -41,12 +41,22 @@ insert into Course (id, name, img, category_id) values (16, 'p', 'p.jpg', 1);
 insert into Course (id, name, img, category_id) values (17, 'q', 'q.jpg', 1);
 insert into Course (id, name, img, category_id) values (18, 'r', 'r.jpg', 1);
 insert into Course (id, name, img, category_id) values (19, 's', 's.jpg', 1);
-insert into Course (id, name, img, category_id) values (20, 'u', 'u.jpg', 1);
-insert into Course (id, name, img, category_id) values (21, 'v', 'v.jpg', 1);
-insert into Course (id, name, img, category_id) values (22, 'w', 'w.jpg', 1);
-insert into Course (id, name, img, category_id) values (23, 'x', 'x.jpg', 1);
-insert into Course (id, name, img, category_id) values (24, 'y', 'y.jpg', 1);
-insert into Course (id, name, img, category_id) values (25, 'z', 'z.jpg', 1);
--- Course 3
-insert into Course (id, name, img, category_id) values (26, 'liczby', 'liczby.jpg', 2);
+insert into Course (id, name, img, category_id) values (20, 't', 't.jpg', 1);
+insert into Course (id, name, img, category_id) values (21, 'u', 'u.jpg', 1);
+insert into Course (id, name, img, category_id) values (22, 'v', 'v.jpg', 1);
+insert into Course (id, name, img, category_id) values (23, 'w', 'w.jpg', 1);
+insert into Course (id, name, img, category_id) values (24, 'x', 'x.jpg', 1);
+insert into Course (id, name, img, category_id) values (25, 'y', 'y.jpg', 1);
+insert into Course (id, name, img, category_id) values (26, 'z', 'z.jpg', 1);
+-- Course 2
+insert into Course (id, name, img, category_id) values (27, '0', '0.jpg', 2);
+insert into Course (id, name, img, category_id) values (28, '1', '1.jpg', 2);
+insert into Course (id, name, img, category_id) values (29, '2', '2.jpg', 2);
+insert into Course (id, name, img, category_id) values (30, '3', '3.jpg', 2);
+insert into Course (id, name, img, category_id) values (31, '4', '4.jpg', 2);
+insert into Course (id, name, img, category_id) values (32, '5', '5.jpg', 2);
+insert into Course (id, name, img, category_id) values (33, '6', '6.jpg', 2);
+insert into Course (id, name, img, category_id) values (34, '7', '7.jpg', 2);
+insert into Course (id, name, img, category_id) values (35, '8', '8.jpg', 2);
+insert into Course (id, name, img, category_id) values (36, '9', '9.jpg', 2);
 
